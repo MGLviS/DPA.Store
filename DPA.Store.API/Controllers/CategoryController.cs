@@ -22,7 +22,7 @@ namespace DPA.Store.API.Controllers
             var categories = await _categoryRepository.GetAll();
             return Ok(categories);
         }
-
+        /*
         [HttpGet("GetById/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -40,7 +40,7 @@ namespace DPA.Store.API.Controllers
         }
 
         //[HttpDelete("Delete")]
-
+        */
  
     }
 }

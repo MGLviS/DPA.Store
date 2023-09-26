@@ -25,7 +25,7 @@ namespace DPA.Store.DOMAIN.Infrastructure.Repositories
         {
             return await _dbContext.Category.ToListAsync(); //Retorna una lista, en este las categorías
         }
-
+        /*
         public async Task<Category> GetById(int id)
         {
             return await _dbContext.Category.Where(x => x.Id == id).FirstOrDefaultAsync();
@@ -48,6 +48,6 @@ namespace DPA.Store.DOMAIN.Infrastructure.Repositories
             _dbContext.Category.Remove(category);
             var rows = await _dbContext.SaveChangesAsync();
             return rows > 0;
-        }
+        }*/
     }
 }
