@@ -16,7 +16,7 @@ namespace DPA.Store.API.Controllers
             _userRepository = userRepository;
         }
 
-        [HttpPost("SinUP")]
+        [HttpPost("SingUP")]
         public async Task<IActionResult> SingUP(User user)
         {
             var result = await _userRepository.SingUP(user);
